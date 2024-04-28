@@ -1,0 +1,194 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Sat Apr 27 20:42:44 2024
+| Host         : DESKTOP-32F9FGL running 64-bit major release  (build 9200)
+| Command      : report_drc -file ODIN_design_wrapper_drc_routed.rpt -pb ODIN_design_wrapper_drc_routed.pb -rpx ODIN_design_wrapper_drc_routed.rpx
+| Design       : ODIN_design_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 28
++-----------+----------+----------------------------+------------+
+| Rule      | Severity | Description                | Violations |
++-----------+----------+----------------------------+------------+
+| CHECK-3   | Warning  | Report rule limit reached  | 1          |
+| PDCN-1569 | Warning  | LUT equation term check    | 6          |
+| REQP-1839 | Warning  | RAMB36 async control check | 20         |
+| RTSTAT-10 | Warning  | No routable loads          | 1          |
++-----------+----------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell ODIN_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin ODIN_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A3)+((~A3)*(~A6)*A2)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#2 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I0) is not included in the LUT equation: 'O5=(A4*A2)+(A4*(~A2)*(~A5))+((~A4))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#3 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell ODIN_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin ODIN_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A6)+((~A6)*(~A5)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#4 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#5 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I1) is not included in the LUT equation: 'O5=(A4*A2)+(A4*(~A2)*(~A5))+((~A4))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#6 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell ODIN_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin ODIN_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A4)+((~A4)*(~A3)*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/controller_0/FSM_sequential_state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/controller_0/FSM_sequential_state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/scheduler_0/genblk1[0].fifo_burst/empty_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/scheduler_0/genblk1[0].fifo_burst/read_ptr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/scheduler_0/genblk1[0].fifo_burst/read_ptr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/scheduler_0/genblk1[10].fifo_burst/empty_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/scheduler_0/genblk1[10].fifo_burst/read_ptr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/scheduler_0/genblk1[10].fifo_burst/read_ptr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/scheduler_0/genblk1[11].fifo_burst/empty_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/scheduler_0/genblk1[11].fifo_burst/read_ptr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/scheduler_0/genblk1[11].fifo_burst/read_ptr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/scheduler_0/genblk1[12].fifo_burst/empty_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/scheduler_0/genblk1[12].fifo_burst/read_ptr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/scheduler_0/genblk1[12].fifo_burst/read_ptr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/scheduler_0/genblk1[13].fifo_burst/empty_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/scheduler_0/genblk1[13].fifo_burst/read_ptr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/scheduler_0/genblk1[13].fifo_burst/read_ptr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/scheduler_0/genblk1[14].fifo_burst/empty_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/scheduler_0/genblk1[14].fifo_burst/read_ptr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0 has an input control pin ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/SRAM_reg_0/ADDRARDADDR[12] (net: ODIN_design_i/ODIN_0/inst/neuron_core_0/neurarray_0/CTRL_NEURMEM_ADDR[7]) which is driven by a register (ODIN_design_i/ODIN_0/inst/scheduler_0/genblk1[14].fifo_burst/read_ptr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+64 net(s) have no routable loads. The problem bus(es) and/or net(s) are ODIN_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+ODIN_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+ODIN_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+ODIN_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+ODIN_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+ODIN_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1],
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TMS,
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0]
+ (the first 15 of 50 listed).
+Related violations: <none>
+
+

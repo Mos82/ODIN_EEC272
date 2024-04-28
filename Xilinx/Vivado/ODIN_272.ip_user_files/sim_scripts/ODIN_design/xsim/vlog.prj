@@ -1,0 +1,23 @@
+verilog xil_defaultlib --include "E:/Xilinx/Vivado/2023.1/data/xilinx_vip/include" --include "../../../../ODIN_272.gen/sources_1/bd/ODIN_design/ipshared/ec67/hdl" --include "../../../../ODIN_272.gen/sources_1/bd/ODIN_design/ipshared/aed8/hdl" \
+"../../../bd/ODIN_design/ip/ODIN_design_processing_system7_0_0/sim/ODIN_design_processing_system7_0_0.v" \
+"../../../bd/ODIN_design/ip/ODIN_design_ODIN_0_0/sim/ODIN_design_ODIN_0_0.v" \
+"../../../bd/ODIN_design/ipshared/beb6/hdl/AER_bus_v1_0_M00_AXIS.v" \
+"../../../bd/ODIN_design/ipshared/beb6/hdl/AER_bus_v1_0_S00_AXIS.v" \
+"../../../bd/ODIN_design/ipshared/beb6/hdl/AER_bus_v1_0.v" \
+"../../../bd/ODIN_design/ip/ODIN_design_AER_bus_0_0/sim/ODIN_design_AER_bus_0_0.v" \
+"../../../bd/ODIN_design/ip/ODIN_design_xbar_1/sim/ODIN_design_xbar_1.v" \
+"../../../bd/ODIN_design/ip/ODIN_design_xbar_2/sim/ODIN_design_xbar_2.v" \
+"../../../bd/ODIN_design/ipshared/fbad/src/AXI_SPI_LOADER_v1_0.v" \
+"../../../bd/ODIN_design/ipshared/fbad/src/AXI_SPI_LOADER_v1_0_S00_AXI.v" \
+"../../../bd/ODIN_design/ip/ODIN_design_AXI_SPI_LOADER_0_0/sim/ODIN_design_AXI_SPI_LOADER_0_0.v" \
+"../../../bd/ODIN_design/ip/ODIN_design_SPI_Master_0_0/sim/ODIN_design_SPI_Master_0_0.v" \
+"../../../bd/ODIN_design/ip/ODIN_design_auto_us_0/sim/ODIN_design_auto_us_0.v" \
+"../../../bd/ODIN_design/ip/ODIN_design_auto_us_1/sim/ODIN_design_auto_us_1.v" \
+"../../../bd/ODIN_design/ip/ODIN_design_auto_pc_0/sim/ODIN_design_auto_pc_0.v" \
+"../../../bd/ODIN_design/ip/ODIN_design_auto_pc_1/sim/ODIN_design_auto_pc_1.v" \
+"../../../bd/ODIN_design/sim/ODIN_design.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

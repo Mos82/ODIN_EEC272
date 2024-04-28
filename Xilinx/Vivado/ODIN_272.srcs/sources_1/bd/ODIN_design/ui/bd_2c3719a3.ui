@@ -1,0 +1,57 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.717936",
+   "Default View_TopLeft":"-162,-157",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 threadsafe
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 8 -x 2660 -y 470 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 8 -x 2660 -y 490 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 6 -x 2140 -y 560 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 190 -y 610 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 4 -x 1370 -y 460 -defaultsOSRD
+preplace inst AER_bus_0 -pg 1 -lvl 3 -x 1000 -y 480 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 5 -x 1730 -y 550 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 1000 -y 170 -defaultsOSRD
+preplace inst SPI_Master_0 -pg 1 -lvl 6 -x 2140 -y 70 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 7 -x 2540 -y 240 -defaultsOSRD
+preplace inst AXI_SPI_LOADER_0 -pg 1 -lvl 5 -x 1730 -y 110 -defaultsOSRD
+preplace inst ODIN_0 -pg 1 -lvl 2 -x 590 -y 440 -defaultsOSRD
+preplace netloc AER_bus_0_AERIN_REQ 1 1 3 400 620 NJ 620 1170
+preplace netloc AER_bus_0_AEROUT_ACK 1 1 3 410 560 820J 350 1160
+preplace netloc Net 1 1 3 390 630 NJ 630 1160
+preplace netloc ODIN_0_AERIN_ACK 1 2 1 780 430n
+preplace netloc ODIN_0_AEROUT_ADDR 1 2 1 N 450
+preplace netloc ODIN_0_AEROUT_REQ 1 2 1 830 430n
+preplace netloc microblaze_0_Clk 1 0 7 10 710 370 570 800 610 1200 580 1550 240 1890 170 2420
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 20 760 NJ 760 NJ 760 NJ 760 NJ 760 NJ 760 2370
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 5 N 650 810 340 1180 340 1560 0 1910
+preplace netloc AXI_SPI_LOADER_0_TX_Byte 1 5 2 1900 180 N
+preplace netloc AXI_SPI_LOADER_0_TX_DV 1 5 2 1910 190 2430
+preplace netloc SPI_Master_0_o_TX_Ready 1 4 3 1580 -30 NJ -30 2450
+preplace netloc ODIN_0_MISO 1 2 5 780 -10 NJ -10 NJ -10 1880J 200 2390
+preplace netloc SPI_Master_0_o_SPI_Clk 1 1 6 400 -60 NJ -60 NJ -60 NJ -60 NJ -60 2440
+preplace netloc SPI_Master_0_o_SPI_MOSI 1 1 6 410 -50 NJ -50 NJ -50 NJ -50 NJ -50 2400
+preplace netloc SPI_Master_0_o_RX_Byte 1 4 3 1580 220 NJ 220 2380
+preplace netloc SPI_Master_0_o_RX_DV 1 4 3 1570 230 N 230 2410
+preplace netloc rst_ps7_0_100M_peripheral_reset 1 1 1 380 400n
+preplace netloc AER_bus_0_M00_AXIS 1 3 1 1190 430n
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 2 3 840 0 NJ 0 1540
+preplace netloc axi_dma_0_M_AXI_MM2S 1 4 1 N 400
+preplace netloc axi_dma_0_M_AXI_S2MM 1 4 1 N 420
+preplace netloc axi_mem_intercon_M00_AXI 1 5 1 N 550
+preplace netloc processing_system7_0_DDR 1 6 2 NJ 500 2630
+preplace netloc processing_system7_0_FIXED_IO 1 6 2 NJ 520 2640
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 5 830 -40 NJ -40 NJ -40 NJ -40 2370
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 1170 160n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 3 2 1160 60 NJ
+levelinfo -pg 1 -10 190 590 1000 1370 1730 2140 2540 2660
+pagesize -pg 1 -db -bbox -sgen -10 -140 2780 810
+"
+}
+{
+   "da_axi4_cnt":"10",
+   "da_clkrst_cnt":"19",
+   "da_mb_cnt":"1",
+   "da_ps7_cnt":"1"
+}

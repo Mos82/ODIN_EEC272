@@ -1,0 +1,6 @@
+vhdl xil_defaultlib  \
+"../../../bd/ODIN_design/ip/ODIN_design_rst_ps7_0_100M_0/sim/ODIN_design_rst_ps7_0_100M_0.vhd" \
+"../../../bd/ODIN_design/ip/ODIN_design_axi_dma_0_0/sim/ODIN_design_axi_dma_0_0.vhd" \
+
+# Do not sort compile order
+nosort
